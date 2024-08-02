@@ -35,7 +35,7 @@ cd scripts
 Ensure you have the necessary dependencies installed. For example:
 
 ```bash
-sudo apt-get install curl rsync jq notify-send rclone feh
+sudo pacman yay curl rsync jq notify-send rclone feh
 ```
 
 ## Usage
