@@ -1,11 +1,56 @@
 #!/bin/bash
 
+# Documentation
+# This script monitors GitHub repositories for new issues and pull requests.
+# If the .env file is missing, the script will prompt the user for the necessary information
+# and save it to a new .env file. Ensure the .env file is not committed to version control.
+
+ENV_FILE=~/scripts/.env
+
+# Function to prompt for user input and save to .env file
+prompt_for_env_vars() {
+  # Function to prompt user for input and validate it
+  read_input() {
+    local prompt_message=$1
+    local var_name=$2
+    local input
+
+    while true; do
+      read -p "$prompt_message" input
+      if [ -z "$input" ]; then
+        echo "Error: $var_name cannot be empty."
+      else
+        echo "$input"
+        break
+      fi
+    done
+  }
+
+  GITHUB_USER=$(read_input "Enter your GitHub username: " "GitHub username")
+  TOKEN=$(read_input "Enter your GitHub token: " "GitHub token")
+  REPOS_INPUT=$(read_input "Enter your repositories (comma-separated): " "Repositories")
+
+  REPOS=$(echo $REPOS_INPUT | tr ',' ' ')
+
+  # Save to .env file
+  {
+    echo "GITHUB_USER=$GITHUB_USER"
+    echo "TOKEN=$TOKEN"
+    echo "REPOS=($REPOS)"
+  } > $ENV_FILE
+
+  # Set file permissions to prevent unauthorized access
+  chmod 600 $ENV_FILE
+
+  echo "Environment variables saved to $ENV_FILE with restricted permissions."
+}
+
 # Load environment variables
-if [ -f ~/scripts/.env ]; then
-  source ~/scripts/.env
+if [ -f $ENV_FILE ]; then
+  source $ENV_FILE
 else
-  echo "Error: .env file not found"
-  exit 1
+  echo "Error: .env file not found. Prompting for required information..."
+  prompt_for_env_vars
 fi
 
 # Configuration
