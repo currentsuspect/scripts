@@ -1,0 +1,60 @@
+[INFO] Running dnsenum...
+Smartmatch is deprecated at /usr/bin/dnsenum line 698.
+Smartmatch is deprecated at /usr/bin/dnsenum line 698.
+Use of uninitialized value $size in integer subtraction (-) at /usr/share/perl5/vendor_perl/Net/DNS/Resolver/Base.pm line 838.
+AXFR record query failed: corrupt packet
+Use of uninitialized value $size in integer subtraction (-) at /usr/share/perl5/vendor_perl/Net/DNS/Resolver/Base.pm line 838.
+AXFR record query failed: corrupt packet
+Use of uninitialized value $size in integer subtraction (-) at /usr/share/perl5/vendor_perl/Net/DNS/Resolver/Base.pm line 838.
+AXFR record query failed: corrupt packet
+Use of uninitialized value $size in integer subtraction (-) at /usr/share/perl5/vendor_perl/Net/DNS/Resolver/Base.pm line 838.
+AXFR record query failed: corrupt packet
+[INFO] Running amass...
+parliament.go.ke (FQDN) --> mx_record --> mail.parliament.go.ke (FQDN)
+parliament.go.ke (FQDN) --> a_record --> 197.155.65.213 (IPAddress)
+parliament.go.ke (FQDN) --> ns_record --> ns-1437.awsdns-51.org (FQDN)
+parliament.go.ke (FQDN) --> ns_record --> ns-1895.awsdns-44.co.uk (FQDN)
+parliament.go.ke (FQDN) --> ns_record --> ns-64.awsdns-08.com (FQDN)
+parliament.go.ke (FQDN) --> ns_record --> ns-947.awsdns-54.net (FQDN)
+mail.parliament.go.ke (FQDN) --> a_record --> 63.33.255.63 (IPAddress)
+webmail.parliament.go.ke (FQDN) --> a_record --> 34.249.66.115 (IPAddress)
+careers.parliament.go.ke (FQDN) --> a_record --> 197.155.65.218 (IPAddress)
+197.155.64.0/21 (Netblock) --> contains --> 197.155.65.213 (IPAddress)
+197.155.64.0/21 (Netblock) --> contains --> 197.155.65.218 (IPAddress)
+34.240.0.0/12 (Netblock) --> contains --> 34.249.66.115 (IPAddress)
+63.32.0.0/14 (Netblock) --> contains --> 63.33.255.63 (IPAddress)
+30844 (ASN) --> managed_by --> LIQUID-AS (RIROrganization)
+30844 (ASN) --> announces --> 197.155.64.0/21 (Netblock)
+16509 (ASN) --> managed_by --> AMAZON-02 - Amazon.com, Inc. (RIROrganization)
+16509 (ASN) --> announces --> 34.240.0.0/12 (Netblock)
+16509 (ASN) --> announces --> 63.32.0.0/14 (Netblock)
+ns-1437.awsdns-51.org (FQDN) --> a_record --> 205.251.197.157 (IPAddress)
+ns-1437.awsdns-51.org (FQDN) --> aaaa_record --> 2600:9000:5305:9d00::1 (IPAddress)
+ns-1895.awsdns-44.co.uk (FQDN) --> a_record --> 205.251.199.103 (IPAddress)
+ns-1895.awsdns-44.co.uk (FQDN) --> aaaa_record --> 2600:9000:5307:6700::1 (IPAddress)
+ns-64.awsdns-08.com (FQDN) --> a_record --> 205.251.192.64 (IPAddress)
+ns-64.awsdns-08.com (FQDN) --> aaaa_record --> 2600:9000:5300:4000::1 (IPAddress)
+ns-947.awsdns-54.net (FQDN) --> a_record --> 205.251.195.179 (IPAddress)
+ns-947.awsdns-54.net (FQDN) --> aaaa_record --> 2600:9000:5303:b300::1 (IPAddress)
+libraryir.parliament.go.ke (FQDN) --> a_record --> 217.21.116.44 (IPAddress)
+212.65.155.197.in-addr.arpa (FQDN) --> ptr_record --> mail.parliament.go.ke (FQDN)
+www.parliament.go.ke (FQDN) --> a_record --> 197.155.65.213 (IPAddress)
+63.255.33.63.in-addr.arpa (FQDN) --> ptr_record --> mail.parliament.go.ke (FQDN)
+205.251.192.0/21 (Netblock) --> contains --> 205.251.197.157 (IPAddress)
+205.251.192.0/21 (Netblock) --> contains --> 205.251.195.179 (IPAddress)
+205.251.192.0/21 (Netblock) --> contains --> 205.251.192.64 (IPAddress)
+205.251.192.0/21 (Netblock) --> contains --> 205.251.199.103 (IPAddress)
+2600:9000:5300::/45 (Netblock) --> contains --> 2600:9000:5305:9d00::1 (IPAddress)
+2600:9000:5300::/45 (Netblock) --> contains --> 2600:9000:5303:b300::1 (IPAddress)
+2600:9000:5300::/45 (Netblock) --> contains --> 2600:9000:5300:4000::1 (IPAddress)
+2600:9000:5300::/45 (Netblock) --> contains --> 2600:9000:5307:6700::1 (IPAddress)
+217.21.112.0/21 (Netblock) --> contains --> 217.21.116.44 (IPAddress)
+30844 (ASN) --> announces --> 217.21.112.0/21 (Netblock)
+16509 (ASN) --> announces --> 205.251.192.0/21 (Netblock)
+16509 (ASN) --> announces --> 2600:9000:5300::/45 (Netblock)
+proxy.parliament.go.ke (FQDN) --> a_record --> 34.249.66.115 (IPAddress)
+
+The enumeration has finished
+[INFO] Combining results...
+[INFO] DNS enumeration complete. Results saved to combined_output.txt
+[INFO] Log file saved to dns_enum_log.txt

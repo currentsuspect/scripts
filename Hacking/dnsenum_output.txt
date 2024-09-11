@@ -1,0 +1,39 @@
+dnsenum.pl VERSION:1.2.4
+[1;34m
+-----   parliament.go.ke   -----
+[0m[1;31m
+
+Host's addresses:
+__________________
+
+[0mparliament.go.ke.                        300      IN    A        197.155.65.213
+[1;31m
+
+Name Servers:
+______________
+
+[0mns-947.awsdns-54.net.                    172800   IN    A        205.251.195.179
+ns-1437.awsdns-51.org.                   172800   IN    A        205.251.197.157
+ns-1895.awsdns-44.co.uk.                 172800   IN    A        205.251.199.103
+ns-64.awsdns-08.com.                     172800   IN    A        205.251.192.64
+[1;31m
+
+Mail (MX) Servers:
+___________________
+
+[0mmail.parliament.go.ke.                   300      IN    A        63.33.255.63
+[1;31m
+
+Trying Zone Transfers and getting Bind Versions:
+_________________________________________________
+
+[0m
+Trying Zone Transfer for parliament.go.ke on ns-947.awsdns-54.net ... 
+
+Trying Zone Transfer for parliament.go.ke on ns-1437.awsdns-51.org ... 
+
+Trying Zone Transfer for parliament.go.ke on ns-1895.awsdns-44.co.uk ... 
+
+Trying Zone Transfer for parliament.go.ke on ns-64.awsdns-08.com ... 
+
+brute force file not specified, bay.
