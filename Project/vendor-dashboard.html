@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Dashboard</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h2>Vendor Dashboard</h2>
+        <button id="logout">Logout</button>
+    </header>
+    <main>
+        <section>
+            <h3>Your Availability</h3>
+            <button id="toggleAvailability">Toggle Availability</button>
+            <p id="availabilityStatus">Currently Unavailable</p>
+        </section>
+
+        <section>
+            <h3>Incoming Orders</h3>
+            <ul id="orderList">
+                <!-- Orders will be dynamically populated -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

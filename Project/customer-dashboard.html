@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h2>Customer Dashboard</h2>
+        <button id="logout">Logout</button>
+    </header>
+    <main>
+        <section>
+            <h3>Available Vendors</h3>
+            <ul id="vendorList">
+                <!-- Vendor data will be dynamically populated -->
+            </ul>
+        </section>
+
+        <section>
+            <h3>Order Water</h3>
+            <form id="orderForm">
+                <label for="quantity">Quantity (Litres):</label>
+                <input type="number" id="quantity" min="1" required>
+                <button type="submit">Order Now</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
